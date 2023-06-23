@@ -1,0 +1,92 @@
+*,
+ ::before, 
+ ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --Grayish-blue: hsl(220, 15%, 55%);
+    --Dark-blue: hsl(218, 44%, 22%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-gray);
+    font-family: 'Outfit';
+}
+
+img {
+    width: 240px;
+    height: 240px;
+    border-radius: 6px;
+}
+
+.card {
+    background-color:var(--White);
+    margin-top: 6em;
+    margin-left: 2em;
+    border-radius: 6px;
+    padding: 10px 0 10px 0;
+    width: 77%;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 15px;
+    padding: 0.75em 0 0.75em;
+    color: var(--Dark-blue);
+}
+
+.subtitle {
+    font-size: smaller !important;
+    display: flex;
+    text-align: center;
+    padding: 0.20em 0 2em;
+    color: var(--Grayish-blue);
+    font-size: 15px;
+    width: 85%;
+}
+
+.attribution {
+    padding-top: 20px;
+}
+
+.attribution a:last-child {
+    color: black;
+}
+
+.attribution a:last-child:hover {
+    animation: clickThis 6000ms infinite alternate;
+}
+
+@keyframes clickThis {
+   25% {
+    color: #12c2e9;
+   }
+
+   50% {
+    color: #c471ed;
+   }
+
+   100% {
+    color: #f64f59;
+   }
+}
