@@ -19,6 +19,7 @@ body {
     align-items: center;
     background-color: var(--light-gray);
     font-family: 'Outfit';
+    min-height: 100vh;
 }
 
 img {
@@ -29,17 +30,11 @@ img {
 
 .card {
     background-color:var(--White);
-    margin-top: 6em;
     margin-left: 2em;
     border-radius: 6px;
     padding: 10px 0 10px 0;
-    width: 77%;
+    width: 97%;
     cursor: pointer;
-    transition: 300ms ease-in-out;
-}
-
-.card:hover {
-    transform: translateY(-20px);
 }
 
 .details {
@@ -63,30 +58,4 @@ img {
     color: var(--Grayish-blue);
     font-size: 15px;
     width: 85%;
-}
-
-.attribution {
-    padding-top: 20px;
-}
-
-.attribution a:last-child {
-    color: black;
-}
-
-.attribution a:last-child:hover {
-    animation: clickThis 6000ms infinite alternate;
-}
-
-@keyframes clickThis {
-   25% {
-    color: #12c2e9;
-   }
-
-   50% {
-    color: #c471ed;
-   }
-
-   100% {
-    color: #f64f59;
-   }
 }
