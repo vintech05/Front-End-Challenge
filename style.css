@@ -20,6 +20,7 @@ body {
     background-color: var(--light-gray);
     font-family: 'Outfit';
     min-height: 100vh;
+    margin-right: 3em;
 }
 
 img {
@@ -29,6 +30,7 @@ img {
 }
 
 .card {
+    align-items: center;
     background-color:var(--White);
     margin-left: 2em;
     border-radius: 6px;
